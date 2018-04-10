@@ -1,0 +1,76 @@
+@import (reference)"../../../../../resources/assets/less/frontend/_vars";
+@import (reference)"../../../laravel-kit/assets/less/_mixins";
+
+// Search Widget
+// ----------------------------------------------------------------------------------------------------------------
+.widget-search {
+    .btn {
+        background-color: @color1;
+        color: #ffffff;
+        &:hover, :focus {
+            background-color: darken(@color1, 10%);
+        }
+    }
+}
+
+// Social buttons Widget
+// ----------------------------------------------------------------------------------------------------------------
+.widget-social_button {
+    .widget-subtitle {
+        margin: 10px 0;
+    }
+    .social-icon {
+        padding: 3px 8px;
+        height: 28px;
+        width: 28px;
+        display: block;
+        border-radius: 50px;
+    }
+}
+
+// Customer Feedback Widget
+// ----------------------------------------------------------------------------------------------------------------
+.widget-customer_feedback {
+    .feedback-content {
+        position: relative;
+        height: 100px;
+        padding: 20px;
+        background: #FFFFFF;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        font-style: italic;
+        font-size: 14px;
+        margin: 15px 0;
+        &:after {
+            content: '';
+            position: absolute;
+            border-style: solid;
+            border-width: 15px 14px 0;
+            border-color: #FFFFFF transparent;
+            display: block;
+            width: 0;
+            z-index: 1;
+            bottom: -15px;
+            left: 30px;
+        }
+    }
+    .customer-avatar {
+        margin-top: 25px;
+        margin-left: 22px;
+        .customer-name {
+            font-weight: 600;
+            font-size: 14px;
+        }
+        img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        span {
+            color: #777777;
+            font-size: 85%;
+        }
+    }
+}
